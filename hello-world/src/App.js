@@ -4,13 +4,15 @@ import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
+import Message from './components/Message'
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greet name="foo" age="25">
+        <Message />
+        {/* <Greet name="foo" age="25">
           <p>This is children property</p>
         </Greet>
         <Greet name="moo" age="28">
@@ -20,7 +22,7 @@ class App extends Component {
 
         <Welcome name="foo" age="25" />
         <Welcome name="moo" age="28" />
-        <Welcome name="too" age="27" />
+        <Welcome name="too" age="27" /> */}
         {/* <Hello /> */}
       </div>
     )
