@@ -7,7 +7,14 @@ import React from 'react'
 //it is recommended to use ES6 fat arrow function, though commented code above will works the same
 // export const Greet = ()=> <h1>Hello World</h1>
 const Greet = (props) => {
-    return <h1>Hello {props.name}, {props.age} </h1>
+    return (
+        <div>
+            <h1>
+                Hello {props.name}, {props.age}
+            </h1>
+            {props.children}
+        </div>
+    )
 }
 
 export default Greet
