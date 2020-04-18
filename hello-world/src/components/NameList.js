@@ -39,7 +39,7 @@ function NameList() {
             age: 9
         }
     ]
-    const personList = persons.map(persn => <Person key={persn.id} persn={persn} />)
+    const personList = persons.map((persn, index) => <Person key={index} persn={persn} />)
     return <div>{personList}</div>
 }
 
