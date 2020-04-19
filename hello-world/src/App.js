@@ -8,9 +8,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <UserProvider value="React">
+        {/* <UserProvider value="React">
           <ComponentC />
-        </UserProvider>
+        </UserProvider> */}
+
+        {/* Without UserProvider */}
+        <ComponentC />
       </div>
     )
   }
